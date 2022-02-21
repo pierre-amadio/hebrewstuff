@@ -66,10 +66,10 @@ ffmpeg -i tehillim-2.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
 
 
 while : ; do
- for i in 001 015 020 023 027 032 036 037;  do
+ for i in 117 100 134 131 123 121 003 113 138 067 013 054 ;  do
   sleep 1;
   echo "PSALM $i"
-  mplayer psalm-$i.mp3;
+  mpg123 psalm-$i.mp3;
  done;
 done;
 
