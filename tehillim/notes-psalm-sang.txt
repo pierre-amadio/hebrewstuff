@@ -44,6 +44,7 @@ P=110 A=01:43:37 B=01:44:59
 P=111 A=01:45:25 B=
 P=113 A=01:49:29 B=01:50:48
 P=114 A=01:51:12 B=01:52:21
+P=115 A=01:52:50 B=01:55:39
 P=117 A=01:59:06 B=01:59:33
 P=120 A=02:35:27
 P=121 A=02:36:50 B=02:38:13
@@ -66,10 +67,10 @@ ffmpeg -i tehillim-2.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
 
 
 while : ; do
- for i in 117 100 134 131 123 121 003 113 138 067 013 054 ;  do
+ for i in 117 100 134 131 123 121 003 113 138 067 013 054 115;  do
   sleep 1;
   echo "PSALM $i"
-  mpg123 psalm-$i.mp3;
+  mpg123 psalm-$i.mp3 2>/dev/null;
  done;
 done;
 
