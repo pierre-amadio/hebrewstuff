@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=tLPJHBdKvVk
 
 P=001 A=00:00:00 B=00:01:22
 P=003 A=00:04:09 B=00:05:42
+P=014 A=00:31:25 B=00:33:03
 P=015 A=00:33:23 B=00:34:38
 P=023 A=01:04:06 B=01:05:08
 P=027 A=01:13:24 B=01:16:22
@@ -68,7 +69,7 @@ ffmpeg -i tehillim-2.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
 
 
 while : ; do
- for i in 117 100 134 131 123 121 003 113 138 067 013 054 115 130;  do
+ for i in 117 100 134 131 123 121 003 113 138 067 013 054 115 130 014;  do
   sleep 1;
   echo "PSALM $i"
   mpg123 psalm-$i.mp3 2>/dev/null;
