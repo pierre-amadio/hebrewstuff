@@ -31,6 +31,9 @@ P=062 A=02:53:35
 P=064 A=02:58:10
 P=066 A=03:02:56 
 P=067 A=03:06:17 B=03:07:26
+P=068 A=03:08:03 B=
+P=069 A=03:14:45 B=
+P=070 A=03:20:58 B=03:22:01
 
 
 ffmpeg -i tehillim-1.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
@@ -73,7 +76,7 @@ ffmpeg -i tehillim-2.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
 
 
 while : ; do
- for i in 117 100 134 131 123 121 003 113 138 067 013 054 115 130 014 047 099 128;  do
+ for i in 117 100 134 131 123 121 003 113 138 067 013 054 115 130 014 047 099 128 070;  do
   sleep 1;
   echo "PSALM $i"
   mpg123 psalm-$i.mp3 2>/dev/null;
