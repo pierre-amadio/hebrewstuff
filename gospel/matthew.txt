@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=evNReze8Oos&list=PLKaReQgs5n9RGVufIZYaYeUJXt-7P4WDI&index=2
+
+C=01 A=00:00:06 B=00:03:10
+C=02 A=00:03:10 B=00:06:09
+C=03 A=00:06:09 B=00:08:10
+C=04 A=00:08:10 B=00:11:10
+C=05 A=00:11:10 B=00:16:23
+C=06 A=00:16:23 B=00:            
+
+C=lordsprayer A=00:17:43 B=00:18:04
+
+ffmpeg -i matthew.mp3 -ss $A -to $B -acodec copy matthew-$C.mp3
+
