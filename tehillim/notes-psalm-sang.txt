@@ -42,6 +42,7 @@ ffmpeg -i tehillim-1.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
 #VOL2
 P=079 A=00:00:00 B=
 P=085 A=00:16:12 B=00:18:05
+P=086 A=00:18:39 B=00:21:30
 P=090 A=00:34:46 B=
 P=092 A=00:40:40 B=
 P=095 A=00:48:01 B=00:49:40
