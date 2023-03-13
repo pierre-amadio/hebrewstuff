@@ -37,6 +37,7 @@ P=067 A=03:06:17 B=03:07:26
 P=068 A=03:08:03 B=
 P=069 A=03:14:45 B=
 P=070 A=03:20:58 B=03:22:01
+P=075 A=03:39:24 B=03:41:04
 
 
 ffmpeg -i tehillim-1.mp3 -ss $A -to $B -acodec copy psalm-$P.mp3
